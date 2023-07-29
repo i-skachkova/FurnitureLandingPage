@@ -274,7 +274,8 @@ header{
 .experiences .container{
     padding-top: 323px;
     padding-bottom: 350px;
-    padding-left: 675px;
+    display: flex;
+    justify-content: flex-end;
 }
 .experiences-name{
     color: #E58411;
@@ -316,12 +317,13 @@ header{
 /*materials*/
 
 .materials{
-    background-image: url(./images/materials-background.png);
+    background-image: url(./images/materials-background.png), url(./images/materials-img1.png), url(./images/materials-img2.png);
     background-repeat: no-repeat;
-    background-position: 100% 95%;
+    background-position: 100% 35%, 63% 0%, 63% 60%;
 }
 .materials .container{
     display: flex;
+    padding-bottom: 261px;
 }
 .materials-content-container{
     padding-top: 124px;
@@ -372,7 +374,6 @@ header{
 /*reviews*/
 
 .reviews .container{
-    padding-top: 261px;
     padding-bottom: 245px;
 }
 .reviews-small-title{
@@ -474,10 +475,13 @@ footer{
 footer .container{
     padding-top: 118px;
     padding-bottom: 58px;
+
+    padding-left: 108px;
+    padding-right: 108px;
 }
 .footer-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .footer-logo-content{
     margin-right: 152px;
@@ -533,7 +537,7 @@ footer .container{
 .footer-links{
     margin-top: 118px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .footer-links-text{
@@ -544,7 +548,6 @@ footer .container{
     line-height: normal;
     letter-spacing: -0.205px;
     opacity: 0.5;
-    margin-right: 679px;
 }
 .footer-links-list{
     display: flex;
